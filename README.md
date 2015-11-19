@@ -1,6 +1,4 @@
 # road-traffic-collisions
-Tools for using PSNI published datasets on road traffic collisions (RTCs)
-
 Road traffic collision data for Northern Ireland are available as annual datasets for 1998 to 2014 from the UK Data Service https://discover.ukdataservice.ac.uk/
 
 However, because these are on the archive as 'safeguarded' data we're not able to reproduce the data as, for example, a combination of all of the years with the labels included. You need to go on to the Data Service and download each of the annual sets yourself. To do this you need to register and tell the service the purpose you want to use the datasets for (hopefully, this will not be required when the data is made properly open data).
@@ -21,8 +19,8 @@ The unique variable 'a_ref' links the three datasets together (match the casualt
 * Then run the scripts (you might need to change the working directory to get the paths right)
 
 This will create three dataframe objects in the environment:
-* Collisions (107,329 obs of 22 variables)
-* Casualties (177,586 obs of 13 variables)
-* Vehicles (199,439 obs of 16 variables)
+* collisions (107,329 obs of 22 variables)
+* casualties (177,586 obs of 13 variables)
+* vehicles (199,439 obs of 16 variables)
 
 It will also save each of these as *.csv in the main repo directory.
