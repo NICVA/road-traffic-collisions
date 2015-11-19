@@ -1,7 +1,7 @@
 # road-traffic-collisions
 Road traffic collision data for Northern Ireland are available as annual datasets for 1998 to 2014 from the UK Data Service https://discover.ukdataservice.ac.uk/
 
-However, because these are on the archive as 'safeguarded' data we're not able to reproduce the data as, for example, a combination of all of the years with the labels included. You need to go on to the Data Service and download each of the annual sets yourself. To do this you need to register and tell the service the purpose you want to use the datasets for (hopefully, this will not be required when the data is made properly open data).
+However, because these are on the archive as ['safeguarded', standard access](https://www.ukdataservice.ac.uk/get-data/data-access-policy/safeguarded-data) data we're not able to reproduce the data as, for example, a combination of all of the years with the labels included. You need to go on to the Data Service and download each of the annual sets yourself. To do this you need to register and tell the service the purpose of your project (hopefully, this will not be required when the data is properly opened).
 
 The R scripts in this repo provide an automated process which you can carry out yourself to combine the annual datasets into one (for each of the collisions, casualties and vehicles), and adding the factor labels so that they are ready for analysis in a human and machine-readable format.
 
