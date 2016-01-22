@@ -78,7 +78,7 @@ casualties$c_move <- factor(casualties$c_move,
 
 casualties$c_school <- factor(casualties$c_school,
                             levels = c(1,6:8),
-                            labels = c(NA, "pupil school journey", "pupil other", "other"))
+                            labels = c(NA, "pupil other", "pupil school journey", "other"))
 
 casualties$c_pcv <- factor(casualties$c_pcv,
                             levels = c(1:5),
