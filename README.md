@@ -1,7 +1,9 @@
 # road-traffic-collisions
-Road traffic collision data for Northern Ireland are available as annual datasets for 1998 to 2014 from the UK Data Service https://discover.ukdataservice.ac.uk/
+Road traffic collision data for Northern Ireland are available as annual datasets for 1998 to 2014 from the UK Data Service https://discover.ukdataservice.ac.uk
 
-However, because these are on the archive as ['safeguarded', standard access](https://www.ukdataservice.ac.uk/get-data/data-access-policy/safeguarded-data) data we're not able to reproduce the data as, for example, a combination of all of the years with the labels included. You need to go on to the Data Service and download each of the annual sets yourself. To do this you need to register and tell the service the purpose of your project (hopefully, this will not be required when the data is properly opened).
+Because these are on the archive as ['safeguarded', standard access](https://www.ukdataservice.ac.uk/get-data/data-access-policy/safeguarded-data) data we're not able to reproduce all years of the data as, for example, a combination of all of the years with the labels included. You need to go on to the Data Service and download each of the annual sets yourself. To do this you need to register and tell the service the purpose of your project.
+
+However, more recent years (currently 2013-2015) are available as open data on [OpenDataNI](https://www.opendatani.gov.uk/organization/police-service-of-northern-ireland?q=road+traffic&sort=score+desc%2C+metadata_modified+desc). These files are coded (i.e. they don't have value labels for each variable) which makes it difficult for users to use the data. To get around this we have published the 'decoded' data [here](http://data.nicva.org/dataset/road-traffic-collision-data-ksi-northern-ireland).
 
 The R scripts in this repo provide an automated process which you can carry out yourself to combine the annual datasets into one (for each of the collisions, casualties and vehicles), and adding the factor labels so that they are ready for analysis in a human and machine-readable format.
 
@@ -24,3 +26,6 @@ This will create three dataframe objects in the environment:
 * vehicles (199,439 obs of 16 variables)
 
 It will also save each of these as *.csv in the main repo directory.
+
+## Or to decode one year on its own
+Simply load the `casualties`, `collisions` or `vehicles` dataframes into R and run the relevant `decode_[whatever].R` script
